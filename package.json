@@ -13,6 +13,7 @@
 		"express": "^4.17.1",
 		"fluent-ffmpeg": "^2.1.2",
 		"fs": "^0.0.1-security",
-		"ytdl-core": "^4.8.2"
+		"ytdl-core": "^4.8.2",
+		"pm2": "^4.5.6"
 	}
 }
