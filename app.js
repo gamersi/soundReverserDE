@@ -15,7 +15,7 @@ function check() {
 function handleSubmit() {
 	console.log("123");
 	const jobID = uuid();
-	location = "http://127.0.0.1:4000/reverse?URL=" + URL.value + "&JID=" + jobID;
+	location = "https://soundreverser.netlify.app/reverse?URL=" + URL.value + "&JID=" + jobID;
 }
 
 function uuid() {
