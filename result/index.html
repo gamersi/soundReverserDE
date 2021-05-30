@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="style.css" />
+		<title>dnuos-esreveR tluseR</title>
+	</head>
+	<body>
+		<h1>Die Datei ist nun fertig!</h1>
+		<p>Sie können das Ergebnis für <span class="red">eine Stunde</span> abrufen!</p>
+		<audio controls="controls" class="player" alt="loading"></audio>
+		<button onclick="home()">zurück zum Start</button>
+		<script defer>
+			function home() {
+				location = "http://127.0.0.1:5500";
+			}
+			const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+			const player = document.querySelector(".player");
+			const jobid = urlParams.get("jobid");
+			// const userpath = "//Users/simon/Documents/code/reversesound";
+			const file = "../cdn/" + jobid + ".mp3";
+			player.src = file;
+		</script>
+		<script src="app.js"></script>
+	</body>
+</html>
