@@ -126,3 +126,9 @@ tmp/
 temp/
 
 package-lock.json
+
+# MacOS 
+.DS_Store
+cdn/.DS_Store
+redirect/.DS_Store
+result/.DS_Store
