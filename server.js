@@ -26,8 +26,8 @@ app.get("/reverse", (req, res) => {
 		.on("end", () => {
 			console.log(JID + " has been saved!");
 		});
-	// res.redirect("https://soundreverser.netlify.app/redirect/?jobid=" + JID);
-	res.redirect("http://127.0.0.1:5500/redirect/?jobid=" + JID);
+	res.redirect("https://soundreverser.netlify.app/redirect/?jobid=" + JID);
+	// res.redirect("http://127.0.0.1:5500/redirect/?jobid=" + JID);
 	var resultHandler = function (err) {
 		if (err) {
 			console.log("unlink failed", err);
