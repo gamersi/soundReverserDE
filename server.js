@@ -9,8 +9,8 @@ app.use(cors());
 ffmpeg.setFfmpegPath("/Users/simon/Downloads/ffmpeg");
 ffmpeg.setFfprobePath("/Users/simon/Downloads/ffmpeg");
 
-app.listen(4000, () => {
-	console.log("Server Listens at port 4000");
+app.listen(80, () => {
+	console.log("Server Listens at port 80");
 });
 
 app.get("/reverse", (req, res) => {
